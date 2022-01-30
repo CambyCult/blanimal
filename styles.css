@@ -19,6 +19,20 @@ img {
     max-width: 100%;
     height: auto;
 }
+    .topstrip{
+        position:relative;
+        background-color:#4f3427;
+        height:5%;
+        width:auto;
+        font-size:x-large;
+        text-align:right; 
+        font-family:Arial, Helvetica, sans-serif;
+        color:#7092bf;
+        text-shadow:#000000;
+        justify-content:space-between;
+        padding-right:2%;
+    }
+        
 
     .header{
         position:relative;
@@ -28,7 +42,9 @@ img {
         align-items:center;
         background-color:#7092bf;
         height:20%;
+        min-height:105px;
         width:100%;
+        
     }
 
         .logodiv{
@@ -50,6 +66,7 @@ img {
         .b2{
             background-color:#7092bf;
             flex:7%;
+            align-items:space-between;
         }
         
                 .icon-1{
@@ -81,16 +98,19 @@ img {
     position:relative;
     display:flex;
     flex-direction:column;
+    flex: 30% 30% 40%;
     height: 50%;
     width: 100%;
     padding: 20px;
-    color: rgb(192, 190, 190);
+    color: #4f3427;
     font-family:'Courier New', Courier, monospace;
-    font-size:larger; 
+    font-size:larger;
+    
+    
   }
   
   .containerColumnA{
-      flex:30%;
+      width:30%;
   }
   
   /* Clear floats after the columns */
@@ -101,3 +121,93 @@ img {
   }
 
   
+  /* BODY OF SITE */
+
+    .scroll-1{
+        background-image:url("images/blah_building3_blur.png");
+        min-height:100%;
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+    .scroll-2{
+        background-image:url("images/sugarbaby.png");
+        min-height:100%;
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+    .scroll-3{
+        background-image:url("images/staff.png");
+        min-height:100%;
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+        .scrolldiv-1{
+            position:relative;
+            display:flex;
+            flex-direction:row;
+            gap:5%;
+            height: 90%;
+            background-color:transparent;
+            color:#7092bf;
+            font-size:x-large;
+            text-align:center;
+            align-items:center;
+            padding-top:5%;
+        }
+            .content-1{
+                position:relative;
+                background:#0b2649;
+                background-image:url("images/sugarbaby.png");
+                border-radius:50%;
+                height:500px;
+                margin:1%;
+                flex:5%;
+                
+                
+                
+            }
+            .content-2{
+                margin: 5% 5% 5% 0%;
+                padding:10px;
+                position:relative;
+                flex:5%;
+                width:100px;
+                
+            }                       /*editing the text scrolling over image*/
+                .content-2 .p1{
+                    
+                    font-size:3rem;
+                    text-align:center;
+                }
+                .content-2 .p2{
+                    margin-top:5%;
+                    font-size:1.5rem;
+                    text-align:left;
+                }
+
+
+        .scrolldiv-2{
+            height: 40%;
+            background-color:#0b2649;
+        }
+        .scrolldiv-3{
+            height: 40%;
+            background-color:#0b2649;
+        }
+        .scrolldiv-4{
+            height: 40%;
+            background-color:#0b2649;
+        }
+        .scrolldiv-5{
+            height: 40%;
+            background-color:#0b2649;
+        }
