@@ -9,8 +9,6 @@ body{
     overflow-y: scroll;
     overflow-x:hidden;
     flex-direction: column;
-    z-index:2;
-    margin-top:150px;
 }
  
 html, body{
@@ -21,20 +19,10 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-.headwrap{
-    position:fixed;
-    overflow:hidden;
-    top:0px;
-    left:0px;
-    height:150px;
-    width:100%;
-    z-index:1;
-}
     .topstrip{
-        /*position:relative*/
+        position:relative;
         background-color:#4f3427;
-        height:30px;
+        height:5%;
         width:auto;
         font-size:x-large;
         text-align:right; 
@@ -47,52 +35,57 @@ img {
         
 
     .header{
-        /*position:relative*/
+        position:relative;
         display:flex;
         flex-direction:row;
-        justify-content:space-between;
+        justify-content:center;
         align-items:center;
         background-color:#7092bf;
-        height:120px;
+        height:20%;
         min-height:105px;
         width:100%;
-        
         
     }
 
         .logodiv{
             background-color:#7092bf;
+            flex:10%;
             margin-left:5%;
-            margin-right:5%;
         }
                 .logo{
-                    height:110px;
+                    height:100px;
                     width:auto;
                     object-fit:scale-down;
                 }
-                        .b1{
-                            background-color:#7092bf;   
-                        }
-                            
-                        .b2{
-                            display:flex;
-                            background-color:#7092bf; 
-                            justify-content:center;
-                            align-items:center;
-                        }
-        
-                            .icon-1{
-                                height:100px;
-                                width:100px;
-                            }
-                
-
-
-                            .t1{
-                                display:none;
-                                background:#7092bf;
-                            }
+        .b1{
+            background-color:#7092bf;
+            flex:7%;
+            margin-left:10%
+        }
             
+        .b2{
+            background-color:#7092bf;
+            flex:7%;
+            align-items:space-between;
+        }
+        
+                .icon-1{
+                    height:100px;
+                    width:100px;
+                }
+        
+
+
+            .t1{
+                display:none;
+                background:#7092bf;
+            }
+            .closebtn{
+                float:right;
+                color:yellow;
+                font-size:35px;
+                cursor:pointer;
+            }
 
 
              /* The grid: Three equal columns that floats next to each other */
@@ -140,7 +133,7 @@ img {
     }
 
     .scroll-2{
-        background-image:url("images/dog2_blur.png");
+        background-image:url("images/sugarbaby.png");
         min-height:100%;
         background-attachment:fixed;
         background-position:center;
@@ -166,7 +159,6 @@ img {
             background-color:transparent;
             color:#7092bf;
             font-size:x-large;
-            font-family:Arial, Helvetica, sans-serif;
             text-align:center;
             align-items:center;
             padding-top:5%;
@@ -175,13 +167,11 @@ img {
                 position:relative;
                 background:#0b2649;
                 background-image:url("images/sugarbaby.png");
-                background-attachment:scroll;
-                vertical-align:middle;
                 border-radius:50%;
-                height:80vh;
+                height:500px;
+                margin:1%;
                 flex:5%;
-                margin-left:2%;
-                flex-shrink:50%;
+                
                 
                 
             }
@@ -206,56 +196,9 @@ img {
 
 
         .scrolldiv-2{
-            display:grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px; 
-            align-items:flex-end;
-            height: 70%;
+            height: 40%;
             background-color:#0b2649;
-            font-family:Arial, Helvetica, sans-serif;
-            overflow:hidden;
         }
-
-        
-            .services-1{
-                grid-area:1/2/2/4;
-                color:#7092bf;
-                font-size:5rem;
-                margin-top:20px;    
-            }
-               
-                                        .services-icon{
-                                            grid-area:2/1/4/2;
-                                            background-image:url("images/stethbutton.png");
-                                            background-size:cover;
-                                            height:100px;
-                                            width:100px;
-                                        }
-            .services-2{
-                grid-area:2/2/7/3;
-                margin-top:50px;
-                color:#7092bf;
-                font-size:1.75rem;
-            }
-                                        .services-2 p{
-                                            margin-bottom:20px;
-                                        }
-
-            .services-3{
-                grid-area:2/3/7/4;
-                justify-content:start;
-                color:#7092bf;
-                font-size:1.75rem;
-                
-            }
-                                        .services-3 p{
-                                            
-                                            margin-bottom:20px;
-                                        }
-
-
         .scrolldiv-3{
             height: 40%;
             background-color:#0b2649;
