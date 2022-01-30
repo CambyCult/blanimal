@@ -9,7 +9,7 @@ function openTab(tabName) {
     document.getElementById(tabName).style.display = "block";
   } 
 
-function toggleText(){
+/*function toggleText(){
     var t2 = document.getElementById("t2");
     var t3 = document.getElementById("t3");
     var t4 = document.getElementById("t4");
@@ -26,5 +26,5 @@ function toggleText(){
                              t5.style.display = "none"
                     }   
     }
-        
-            
+*/
+    

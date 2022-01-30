@@ -3,13 +3,14 @@
 }
 
 body{
+    position:relative;
     background-color: #0b2649;
     box-sizing: border-box;
     margin: none;
     overflow-y: scroll;
     overflow-x:hidden;
     flex-direction: column;
-    z-index:2;
+    z-index:5;
     margin-top:150px;
 }
  
@@ -29,11 +30,11 @@ img {
     left:0px;
     height:150px;
     width:100%;
-    z-index:1;
+    z-index:3;
 }
     .topstrip{
         /*position:relative*/
-        background-color:#4f3427;
+        background-color:#0b2649;
         height:30px;
         width:auto;
         font-size:x-large;
@@ -127,6 +128,8 @@ img {
     display:table;
   }
 
+
+
   
   /* BODY OF SITE */
 
@@ -176,6 +179,8 @@ img {
                 background:#0b2649;
                 background-image:url("images/sugarbaby.png");
                 background-attachment:scroll;
+                background-repeat:no-repeat;
+                background-size:cover;
                 vertical-align:middle;
                 border-radius:50%;
                 height:80vh;
@@ -223,24 +228,28 @@ img {
                 grid-area:1/2/2/4;
                 color:#7092bf;
                 font-size:5rem;
-                margin-top:20px;    
+                margin-top:20px;
+                text-align:center;    
             }
                
                                         .services-icon{
-                                            grid-area:2/1/4/2;
+                                            grid-area:2/1/6/2;
                                             background-image:url("images/stethbutton.png");
                                             background-size:cover;
-                                            height:100px;
-                                            width:100px;
+                                            height:400px;
+                                            width:400px;
+                                            margin-left:50px;
                                         }
             .services-2{
                 grid-area:2/2/7/3;
-                margin-top:50px;
+                justify-content:start;
                 color:#7092bf;
                 font-size:1.75rem;
+                
+                text-align:center;
             }
                                         .services-2 p{
-                                            margin-bottom:20px;
+                                            margin-bottom:30px;
                                         }
 
             .services-3{
@@ -248,23 +257,26 @@ img {
                 justify-content:start;
                 color:#7092bf;
                 font-size:1.75rem;
-                
+                text-align:center;
             }
                                         .services-3 p{
                                             
-                                            margin-bottom:20px;
+                                            margin-bottom:30px;
                                         }
 
 
         .scrolldiv-3{
-            height: 40%;
+            height: 75%;
             background-color:#0b2649;
+            color:#7092bf;
+            text-align:center;
+            font-size:5rem;
+            font-family:Arial, Helvetica, sans-serif;
         }
         .scrolldiv-4{
-            height: 40%;
+            height: 10%;
             background-color:#0b2649;
+            color:white;
+            text-align:center;
         }
-        .scrolldiv-5{
-            height: 40%;
-            background-color:#0b2649;
-        }
+        
