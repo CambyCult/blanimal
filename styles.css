@@ -16,7 +16,7 @@ position:fixed;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    top:0px;
+    bottom:0px;
     left:0px;
     height:15vh;
     width:100vw;
@@ -134,7 +134,7 @@ position:fixed;
 .container{
     height:85vh;
     width:100vw;
-    margin-top:15vh;
+    margin-bottom:15vh;
     background-color:#0b2649;
     align-items:center;
     overflow-y:scroll;
@@ -230,6 +230,14 @@ position:fixed;
                     margin-top:2vh;
                     margin-bottom:2vh;
                 }
+
+                @media screen and (orientation:portrait){
+                    .services-2{
+                        column-count: 1;
+                        column-width:60vw;
+                        gap:5vh;
+                    }
+                }
     
 
     .box-3{
@@ -245,8 +253,13 @@ position:fixed;
             justify-content:space-evenly;
             height:75vh;
             width:100vw;
+         }
 
-        }
+         @media screen and (orientation:portrait){
+            .box-3{
+                display:none;
+            }
+         }
 
     
     .box-4{
@@ -259,11 +272,17 @@ position:fixed;
         gap:2vh;
     }
 
-    @media only screen and (max-width:600px){
+    @media only screen and (orientation:portrait){
         .box-4{
             display:none;
         }
     }
+    @media only screen and (orientation:landscape){
+        .box-4{
+            display:none;
+        }
+    }
+    
             .box-4 h1{
                 font-size:5vh;
                 color:#7092bf;
@@ -322,21 +341,32 @@ position:fixed;
                             }
                 
                             .teamtitle {
-                                font-size:1.25rem;
+                                font-size:1rem;
                                 color: #7092bf;
-                                margin-bottom:20px;
+                                font-style:bold;
+                            }
+
+                            .teamcard p{
+                                text-align:center;
                             }
             
                 
        
 
         .box-5{
-            background-color:rgb(66, 66, 2);
+            
             height:75vh;
             width:100vw;
-            border:2px solid #000;
+            
             scroll-snap-align:center;
             scroll-snap-stop:always;
-            margin-bottom:5vh;
+            margin-top:15vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
         }
+            .box-5 iframe{
+                width:90vw;
+                height:60vh;
+            }
            
