@@ -1,282 +1,322 @@
 *{
+    box-sizing:border-box;
     margin:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
-    position:relative;
-    background-color: #0b2649;
-    box-sizing: border-box;
-    margin: none;
-    overflow-y: scroll;
+.body{
     overflow-x:hidden;
-    flex-direction: column;
-    z-index:5;
-    margin-top:150px;
-}
- 
-html, body{
-    height:100%;
+    
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.headwrap{
-    position:fixed;
-    overflow:hidden;
-    top:0px;
-    left:0px;
-    height:150px;
-    width:100%;
-    z-index:3;
-}
-    .topstrip{
-        /*position:relative*/
-        background-color:#0b2649;
-        height:30px;
-        width:auto;
-        font-size:x-large;
-        text-align:right; 
-        font-family:Arial, Helvetica, sans-serif;
-        color:#7092bf;
-        text-shadow:#000000;
-        justify-content:space-between;
-        padding-right:2%;
-    }
-        
-
-    .header{
-        /*position:relative*/
-        display:flex;
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:center;
-        background-color:#7092bf;
-        height:120px;
-        min-height:105px;
-        width:100%;
-        
-        
-    }
-
-        .logodiv{
-            background-color:#7092bf;
-            margin-left:5%;
-            margin-right:5%;
-        }
-                .logo{
-                    height:110px;
-                    width:auto;
-                    object-fit:scale-down;
-                }
-                        .b1{
-                            background-color:#7092bf;   
-                        }
-                            
-                        .b2{
-                            display:flex;
-                            background-color:#7092bf; 
-                            justify-content:center;
-                            align-items:center;
-                        }
-        
-                            .icon-1{
-                                height:100px;
-                                width:100px;
-                            }
-                
-
-
-                            .t1{
-                                display:none;
-                                background:#7092bf;
-                            }
-            
-
-
-             /* The grid: Three equal columns that floats next to each other */
-.b1, .b2{
-    cursor: pointer;
-    width:20%;
-  }
-  
-  .containerTab {
-    position:relative;
+/*Header*/
+.header{
+position:fixed;                                                 
     display:flex;
     flex-direction:column;
-    flex: 30% 30% 40%;
-    height: 50%;
-    width: 100%;
-    padding: 20px;
-    color: #4f3427;
-    font-family:'Courier New', Courier, monospace;
-    font-size:larger;
-    
-    
-  }
-  
-  .containerColumnA{
-      width:30%;
-  }
-  
-  /* Clear floats after the columns */
-  .header:after {
-    content: "";
-    clear: both;
-    display:table;
-  }
+    justify-content:center;
+    align-items:center;
+    top:0px;
+    left:0px;
+    height:15vh;
+    width:100vw;
+    background-color:#0b2649;
 
-
-
-  
-  /* BODY OF SITE */
-
-    .scroll-1{
-        background-image:url("images/blah_building3_blur.png");
-        min-height:100%;
-        background-attachment:fixed;
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:cover;
+}
+    .topstrip{
+        background-color:#0b2649;
+        color:#7092bf;
+        text-align:right;
+        font-size:contain;
+        height:3vh;
+        width:100vw;
     }
+        .topstrip p{
+            font-size:1vw;
+        }
 
-    .scroll-2{
-        background-image:url("images/dog2_blur.png");
-        min-height:100%;
-        background-attachment:fixed;
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:cover;
+        @media screen and (orientation:portrait){
+            .topstrip{
+                height:5vh;
+            }
+            .topstrip p{
+                font-size:1.55vh;
+                text-justify:center;
+                text-align:center;
+                text-transform:translateY(50%);
+            }
+            .bottomstrip{
+                padding-top:2vh;
+                height:10vh;
+                align-items:bottom;
+                overflow-y:hidden;
+            }
+        }
+
+    .bottomstrip{
+        background-color:#7092bf;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+        height:12vh;
+        width:100vw;
     }
-
-    .scroll-3{
-        background-image:url("images/staff.png");
-        min-height:100%;
-        background-attachment:fixed;
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:cover;
-    }
-
-        .scrolldiv-1{
-            position:relative;
+        .logo{
             display:flex;
-            flex-direction:row;
-            gap:5%;
-            height: 90%;
-            background-color:transparent;
-            color:#7092bf;
-            font-size:x-large;
-            font-family:Arial, Helvetica, sans-serif;
+            height:12vh;
+            width:36vh;
+            background-image:url("images/logoedit.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-color:#7092bf;
+        }
+        .icon-1{
+            display:flex;
+            height:10vh;
+            width:10vh;
+            border-radius:50%;
+            
+            background-image:url("images/stethbutton.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+        }
+        .icon-2{
+            display:flex;
+            height:10vh;
+            width:10vh;
+            border-radius:50%;
+            
+            background-image:url("images/catbutton.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+        }
+        .icon-3{
+            display:flex;
+            height:10vh;
+            width:10vh;
+            border-radius:50%;
+            
+            background-image:url("images/dogbutton.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+        }
+        .icon-4{
+            display:flex;
+            height:10vh;
+            width:10vh;
+            border-radius:50%;
+            background-image:url("images/phonebutton.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+        }
+                        @media screen and (orientation:portrait){
+                            .icon-1{
+                                display:none;
+                            }
+                            
+                            .icon-4{
+                                display:none;
+                            }
+                        }
+
+
+
+
+
+
+
+
+
+
+
+/*Container for scoll-snap function*/
+.container{
+    height:85vh;
+    width:100vw;
+    margin-top:15vh;
+    background-color:#0b2649;
+    align-items:center;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    scroll-snap-type:y mandatory;
+        background-image:url("images/blah_building3_blur.png");
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+}
+
+    /*.parallax{
+        background-image:url("images/blah_building3_blur.png");
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:85vh;
+    }*/
+
+    .boxes{
+        display:flex;
+        flex-direction:column;
+        gap:10vh;
+    }
+         .box-1{
+            display:flex;
+            flex-direction:column;
+            background-color:#0b2649 25%;
+            height:75vh;
+            width:100vw;
+            
+            scroll-snap-align:center;
+            scroll-snap-stop:always;
+            margin-top:5vh;
             text-align:center;
             align-items:center;
-            padding-top:5%;
+            justify-content:space-around;
         }
-            .content-1{
-                position:relative;
-                background:#0b2649;
+            .sugarbaby{
+                height:50vh;
+                width:50vh;
                 background-image:url("images/sugarbaby.png");
-                background-attachment:scroll;
+                background-size:contain;
                 background-repeat:no-repeat;
-                background-size:cover;
-                vertical-align:middle;
                 border-radius:50%;
-                height:80vh;
-                flex:5%;
-                margin-left:2%;
-                flex-shrink:50%;
-                
-                
+
             }
-            .content-2{
-                margin: 5% 5% 5% 0%;
-                padding:10px;
-                position:relative;
-                flex:5%;
-                width:100px;
-                
-            }                       /*editing the text scrolling over image*/
-                .content-2 .p1{
-                    
-                    font-size:3rem;
-                    text-align:center;
+            .box-1 p{
+                color:#0b2649;
+                font-size:3vw;
+            }
+            @media screen and (orientation:portrait){
+                .sugarbaby{
+                    height:75vw;
+                    width:75vw;
                 }
-                .content-2 .p2{
-                    margin-top:5%;
-                    font-size:1.5rem;
-                    text-align:left;
+                .box-1 p{
+                    font-size:3vh
                 }
-
-
-        .scrolldiv-2{
-            display:grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px; 
-            align-items:flex-end;
-            height: 70%;
-            background-color:#0b2649;
-            font-family:Arial, Helvetica, sans-serif;
-            overflow:hidden;
+            }
+            
+        .box-2{
+            /*background-color:rgb(11, 38, 73, 0.5);*/
+            background-image:linear-gradient(rgb(11, 38, 73, 1), rgb(11,38,73, 0.1));
+            height:75vh;
+            width:100vw;
+            gap:5vh;
+            scroll-snap-align:start;
+            scroll-snap-stop:always;
         }
-
-        
             .services-1{
-                grid-area:1/2/2/4;
+                text-align:center;
+                font-size:10vh;
+                text-decoration:underline;
                 color:#7092bf;
-                font-size:5rem;
-                margin-top:20px;
-                text-align:center;    
             }
-               
-                                        .services-icon{
-                                            grid-area:2/1/6/2;
-                                            background-image:url("images/stethbutton.png");
-                                            background-size:cover;
-                                            height:400px;
-                                            width:400px;
-                                            margin-left:50px;
-                                        }
+
             .services-2{
-                grid-area:2/2/7/3;
-                justify-content:start;
+                height:65vh;
+                padding-top:3vh;
+                font-size:4vh;
                 color:#7092bf;
-                font-size:1.75rem;
+                text-align:center;
+                column-count: 3;
+                column-width:20vw;
+                column-rule-style:solid;
+                column-rule-color:#7092bf;
+                column-rule-width:2px;
+            }
+                .service-2 p{
+                    margin-top:2vh;
+                    margin-bottom:2vh;
+                }
+
+    .box-3{
+        height:75vh;
+        width:100vw;
+        scroll-snap-align:center;
+        scroll-snap-stop:always;
+        display:flex;
+        flex-direction:column;
+        gap:2vh;
+    }
+
+    @media only screen and (max-width:600px){
+        .box-3{
+            display:none;
+        }
+    }
+            .box-3 h1{
+                font-size:5vh;
+                color:#7092bf;
+                text-decoration:underline;
+                width:100vw;
+                text-align:center;
+            }
+                .team{
+                    display:column;
+                    width:100vw;
+                    height:65vh;
+                    color:#7092bf;
+                    
+                }
+                    .team h2{
+                        text-decoration:underline;
+                    }
+                    .team h1{
+                        margin-top:20px;
+                        font-size:5rem;
+                        text-decoration:underline;
+                        text-align:center;
+                    }
+
+                                        /* Three columns side by side */
+                .teamrow-1{
+                    display:flex;
+                    flex-direction:row;
+                    justify-content:space-evenly;
+                      
+                }
+                .teamrow-2{
+                    display:flex;
+                    flex-direction:row;
+                    justify-content:space-evenly;
+                    margin-top:10vh;   
+                }
+                .teamcolumn {
+                    margin-left:5vw;
+                    margin-right:5vw;
+                }
                 
-                text-align:center;
-            }
-                                        .services-2 p{
-                                            margin-bottom:30px;
-                                        }
-
-            .services-3{
-                grid-area:2/3/7/4;
-                justify-content:start;
-                color:#7092bf;
-                font-size:1.75rem;
-                text-align:center;
-            }
-                                        .services-3 p{
-                                            
-                                            margin-bottom:30px;
-                                        }
-
-
-        .scrolldiv-3{
-            height: 75%;
-            background-color:#0b2649;
-            color:#7092bf;
-            text-align:center;
-            font-size:5rem;
-            font-family:Arial, Helvetica, sans-serif;
+               
+                
+                /* Add some shadows to create a card effect */
+                .teamcard {
+                    background-color:#0b2649;
+                    width:30vh;
+                    height:30vh;
+                    padding:10px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+                }
+                            .teamcard img{
+                                border-radius:1%;
+                                background-size:contain;
+                            }
+                
+                            .teamtitle {
+                                font-size:1.25rem;
+                                color: #7092bf;
+                                margin-bottom:20px;
+                            }
+            
+                
+        .box-4{
+            background-color:rgb(66, 66, 2);
+            height:75vh;
+            width:100vw;
+            border:2px solid #000;
+            scroll-snap-align:center;
+            scroll-snap-stop:always;
+            margin-bottom:5vh;
         }
-        .scrolldiv-4{
-            height: 10%;
-            background-color:#0b2649;
-            color:white;
-            text-align:center;
-        }
-        
+           

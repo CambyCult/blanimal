@@ -1,0 +1,390 @@
+*{
+    margin:0;
+}
+
+body{
+    position:relative;
+    background-color: #0b2649;
+    
+    
+    
+    overflow-x:hidden;
+    
+    z-index:5;
+    
+}
+ 
+html, body{
+    height:100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.headwrap{
+    position:fixed;
+    overflow:hidden;
+    top:0px;
+    left:0px;
+    height:150px;
+    width:100%;
+    z-index:3;
+}
+    .topstrip{
+        /*position:relative*/
+        background-color:#0b2649;
+        height:30px;
+        width:auto;
+        font-size:x-large;
+        text-align:right; 
+        font-family:Arial, Helvetica, sans-serif;
+        color:#7092bf;
+        text-shadow:#000000;
+        justify-content:space-between;
+        padding-right:2%;
+    }
+        
+
+    .header{
+        /*position:relative*/
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        background-color:#7092bf;
+        height:120px;
+        min-height:105px;
+        width:100%;  
+    }
+
+        .logodiv{
+            background-color:#7092bf;
+            margin-left:5%;
+            margin-right:5%;
+        }
+                .logo{
+                    height:110px;
+                    width:auto;
+                    object-fit:scale-down;
+                }
+                        .b1{
+                            background-color:#7092bf;   
+                        }
+                            
+                        .b2{
+                            display:flex;
+                            background-color:#7092bf; 
+                            justify-content:center;
+                            align-items:center;
+                        }
+        
+                            .icon-1{
+                                height:100px;
+                                width:100px;
+                            }
+                
+
+
+                            .t1{
+                                display:none;
+                                background:#7092bf;
+                            }
+            
+
+
+             /* The grid: Three equal columns that floats next to each other */
+                                                    .b1, .b2{
+                                                        cursor: pointer;
+                                                        width:20%;
+                                                    }
+  
+                    .containerTab {
+                        position:relative;
+                        display:flex;
+                        flex-direction:column;
+                        flex: 30% 30% 40%;
+                        height: 50%;
+                        width: 100%;
+                        padding: 20px;
+                        color: #4f3427;
+                        font-family:'Courier New', Courier, monospace;
+                        font-size:larger;
+                        scroll-snap-align: start;
+                        
+                    }
+  
+                                .containerColumnA{
+                                    width:30%;
+                                }
+                                
+                                    /* Clear floats after the columns */
+                                    .header:after {
+                                        content: "";
+                                        clear: both;
+                                        display:table;
+                                    }
+
+
+
+  
+  /* BODY OF SITE */
+
+/*Snapping Properties*/
+        .snap-container{
+            height:100vh;
+            margin-top:150px;
+            scroll-snap-type:y mandatory;
+            scroll-snap-stop:always;
+            overscroll-behavior-y:contain;
+        }
+        .snap-element{
+            scroll-snap-align:start;
+        }
+
+                .scroll-1{
+                    background-image:url("images/blah_building3_blur.png");
+                    min-height:100%;
+                    background-attachment:fixed;
+                    background-position:center;
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                }
+
+                .scroll-2{
+                    
+                    background-image:url("images/dog2_blur.png");
+                    min-height:100%;
+                    background-attachment:fixed;
+                    background-position:center;
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                }
+
+                .scroll-3{
+                    background-image:url("images/staff.png");
+                    min-height:100%;
+                    background-attachment:fixed;
+                    background-position:center;
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                }
+
+                    .scrolldiv-1{
+                        position:relative;
+                        display:flex;
+                        flex-direction:row;
+                        gap:5%;
+                        height: 90%;
+                        background-color:transparent;
+                        color:#7092bf;
+                        font-size:x-large;
+                        font-family:Arial, Helvetica, sans-serif;
+                        text-align:center;
+                        align-items:center;
+                        padding-top:5%;
+                        
+                    }
+                        .content-1{
+                            position:relative;
+                            background:#0b2649;
+                            background-image:url("images/sugarbaby.png");
+                            background-attachment:scroll;
+                            background-repeat:no-repeat;
+                            background-size:cover;
+                            vertical-align:middle;
+                            border-radius:50%;
+                            height:80vh;
+                            flex:5%;
+                            margin-left:2%;
+                            flex-shrink:50%;
+                            
+                            
+                        }
+/*What we're all about*/    .content-2{
+                                margin: 5% 5% 5% 0%;
+                                padding:10px;
+                                position:relative;
+                                flex:5%;
+                                width:100px;
+                                scroll-snap-align:center;
+                            }                       /*editing the text scrolling over image*/
+                                .content-2 .p1{
+                                    
+                                    font-size:3rem;
+                                    text-align:center;
+                                }
+                                .content-2 .p2{
+                                    margin-top:5%;
+                                    font-size:1.5rem;
+                                    text-align:left;
+                                }
+
+
+/*Services*/         .scrolldiv-2{
+                        display:grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(6, 1fr);
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px; 
+                        align-items:flex-end;
+                        height: 70%;
+                        background-color:#0b2649;
+                        font-family:Arial, Helvetica, sans-serif;
+                        overflow:hidden;
+                    }   
+                        .services-1{
+                            grid-area:1/2/2/4;
+                            color:#7092bf;
+                            font-size:5rem;
+                            margin-top:20px;
+                            text-align:center; 
+                            text-decoration:underline; 
+                        }
+                            .services-icon{
+                                grid-area:2/1/6/2;
+                                background-image:url("images/stethbutton.png");
+                                background-size:cover;
+                                height:400px;
+                                width:400px;
+                                margin-left:50px;
+                            }
+                        .services-2{
+                            grid-area:2/2/7/3;
+                            justify-content:start;
+                            color:#7092bf;
+                            font-size:1.75rem;
+                            
+                            text-align:center;
+                        }
+                            .services-2 p{
+                                margin-bottom:30px;
+                            }
+
+                        .services-3{
+                            grid-area:2/3/7/4;
+                            justify-content:start;
+                            color:#7092bf;
+                            font-size:1.75rem;
+                            text-align:center;
+                        }
+                            .services-3 p{
+                                
+                                margin-bottom:30px;
+                            }
+/*Infographics*/            
+            .info img{
+                height:500px;
+                width:500px;
+                margin-top:125px;
+                margin-left:190px;
+            }
+ /*Map*/
+            .scrolldiv-3{
+                        height: 50vh;
+                        background-color:#0b2649;
+                        color:#7092bf;
+                        text-align:center;
+                        font-size:5rem;
+                        font-family:Arial, Helvetica, sans-serif;     
+                    }
+                            .scrolldiv-3 iframe{
+                                margin-top:50px;
+                                max-height:fit-content;
+                            }
+
+/*Meet Our Team*/
+                            .team{
+                                width:100%;
+                                height:80%;
+                                color:#7092bf;
+                                font-family:Arial, Helvetica, sans-serif;     
+                            }
+                                                    .team h2{
+                                                        text-decoration:underline;
+                                                    }
+                                                    .team h1{
+                                                        margin-top:20px;
+                                                        font-size:5rem;
+                                                        text-decoration:underline;
+                                                        text-align:center;
+                                                    }
+
+                                                            /* Three columns side by side */
+                                    .teamcolumn {
+                                        
+                                        float: left;
+                                        width: 30%;
+                                        margin-top:30px;
+                                        margin-left:35px;
+                                        margin-bottom: 16px;
+                                        padding: 0 8px;
+                                    }
+                                    
+                                    /* Display the columns below each other instead of side by side on small screens */
+                                    @media screen and (max-width: 650px) {
+                                        .teamcolumn {
+                                        width: 100%;
+                                        display: block;
+                                        }
+                                    }
+                                    
+                                    /* Add some shadows to create a card effect */
+                                    .teamcard {
+                                        background-color:#0b2649;
+                                        
+                                        width:350px;
+                                        height:350px;
+                                        padding:10px;
+                                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+                                    }
+                                                .teamcard img{
+                                                    border-radius:1%;
+                                                    
+                                                    width:100px;
+                                                    height:auto;
+                                                }
+                                    
+                                    /* Some left and right padding inside the container */
+                                    .teamcontainer {
+                                        padding: 0 16px;
+                                    }
+                                    
+                                    /* Clear floats */
+                                    .teamcontainer::after, .row::after {
+                                        content: "";
+                                        clear: both;
+                                        display: table;
+                                    }
+                                    
+                                    .teamtitle {
+                                        font-size:1.25rem;
+                                        color: #7092bf;
+                                        margin-bottom:20px;
+                                    }
+                                    
+                                    .teambutton {
+                                        border: none;
+                                        outline: 0;
+                                        display: inline-block;
+                                        padding: 8px;
+                                        color: white;
+                                        background-color: #000;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        width: 100%;
+                                    }
+                                    
+                                    .teambutton:hover {
+                                        background-color: #555;
+                                    } 
+
+
+                    .scrolldiv-4{
+                        height: 5%;
+                        background-color:#0b2649;
+                        color:white;
+                        text-align:center;
+                    }
+                    
