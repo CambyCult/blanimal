@@ -230,8 +230,26 @@ position:fixed;
                     margin-top:2vh;
                     margin-bottom:2vh;
                 }
+    
 
     .box-3{
+        height:75vh;
+        width:100vw;
+        scroll-snap-align:center;
+        scroll-snap-stop:always;
+        margin-bottom:5vh;
+    }
+        .infographics{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            height:75vh;
+            width:100vw;
+
+        }
+
+    
+    .box-4{
         height:75vh;
         width:100vw;
         scroll-snap-align:center;
@@ -242,11 +260,11 @@ position:fixed;
     }
 
     @media only screen and (max-width:600px){
-        .box-3{
+        .box-4{
             display:none;
         }
     }
-            .box-3 h1{
+            .box-4 h1{
                 font-size:5vh;
                 color:#7092bf;
                 text-decoration:underline;
@@ -310,7 +328,9 @@ position:fixed;
                             }
             
                 
-        .box-4{
+       
+
+        .box-5{
             background-color:rgb(66, 66, 2);
             height:75vh;
             width:100vw;
