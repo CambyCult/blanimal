@@ -276,7 +276,7 @@ position:fixed;
         gap:2vh;
     }
 
-    @media only screen and (orientation:portrait){
+    @media screen and (orientation:portrait){
         .box-4{
             display:none;
         }
